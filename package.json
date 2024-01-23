@@ -1,0 +1,44 @@
+{
+  "name": "form_reports",
+  "version": "1.0.0",
+  "description": "Overview",
+  "main": "index.js",
+  "scripts": {
+    "dev_server": "set NODE_ENV=development && nodemon --use-strict --max-old-space-size=2048 --max-http-header-size 15000 src/server.js",
+    "uat_server_win": "set NODE_ENV=production && nodemon --use-strict --max-http-header-size 15000 src/server.js",
+    "uat_server_profile": "set NODE_ENV=production && nodemon --inspect --use-strict --max-http-header-size 15000 src/server.js",
+    "dev_server_profile": "set NODE_ENV=development && nodemon --inspect --use_strict --max-http-header-size 15000 src/server.js",
+    "dev_server_linux": "export NODE_ENV=development && node --max-http-header-size 15000 --max-old-space-size=2048 src/server.js",
+    "uat_server_linux": "export NODE_ENV=production && node --max-http-header-size 15000 --max-old-space-size=2048 src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhshaydn/form_reports.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nhshaydn/form_reports/issues"
+  },
+  "homepage": "https://github.com/nhshaydn/form_reports#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csv-parse": "^5.5.3",
+    "custom-env": "^2.0.1",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwks-rsa": "^2.0.3",
+    "lodash": "^4.17.21",
+    "nocache": "^3.0.1",
+    "nodemon": "^2.0.7",
+    "querystring": "^0.2.1",
+    "tlru": "^1.0.2",
+    "wait-until": "0.0.2",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.5"
+  }
+}
