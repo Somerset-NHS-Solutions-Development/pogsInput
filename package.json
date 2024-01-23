@@ -30,7 +30,7 @@
     "fs": "0.0.1-security",
     "http": "0.0.1-security",
     "https": "^1.0.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "jwks-rsa": "^2.0.3",
     "lodash": "^4.17.21",
     "nocache": "^3.0.1",
